@@ -5,7 +5,7 @@ function getCursorPos(canvas, event) {
 }
 
 function getTouchPos(canvas, touchEvent) {
-  var rect = canvasDom.getBoundingClientRect();
+  var rect = canvas.getBoundingClientRect();
   return [touchEvent.touches[0].clientX - rect.left, touchEvent.touches[0].clientY - rect.top];
 }
 
